@@ -2,10 +2,19 @@
 
 require_once("config.php");
 
-$jogos = new Usuario();
+//$jogos = new Usuario();
+//$jogos->loadById(3);
+//echo $jogos;
 
-$jogos->loadById(3);
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
-echo $jogos;
+//$search = Usuario::search("jo");
 
+//echo json_encode($search);
+
+$usuario = new Usuario();
+$usuario->login("root","askljd");
+
+echo $usuario;
 ?>
