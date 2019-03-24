@@ -22,13 +22,21 @@ require_once("config.php");
 
 //echo $aluno;
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->loadById(3);
 
 $usuario->update("professor", "!@#$%¨%$#");
 
 echo $usuario;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(3);
+
+$usuario->delete();
+
+echo $usuario;
 
 ?>
