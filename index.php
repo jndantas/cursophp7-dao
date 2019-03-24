@@ -13,8 +13,22 @@ require_once("config.php");
 
 //echo json_encode($search);
 
+//$usuario = new Usuario();
+//$usuario->login("root","askljd");
+
+//$aluno = new Usuario("aluno", "@lun0");
+
+//$aluno->insert();
+
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("root","askljd");
+
+$usuario->loadById(3);
+
+$usuario->update("professor", "!@#$%¨%$#");
 
 echo $usuario;
+
+
 ?>
